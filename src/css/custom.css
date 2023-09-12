@@ -1,0 +1,96 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ * 这里包含的任何CSS都是全局的
+ * 经典模板默认绑定 Infima css库 
+ * https://infima.dev/docs/getting-started/introduction
+ */
+
+/* You can override the default Infima variables here. */
+/* 您可以在这里覆盖默认的Infima变量 */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --c-tip-dark: #42b983;
+  --c-tip-bg-dark: #2b313a;
+  --c-tip-text-dark: #adbac7;
+}
+[data-theme='light'] {
+  --c-tip: #318a62;
+  --c-tip-bg: #f3f4f5;
+  --c-tip-text: #2c3e50;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] .markdown blockquote {
+  background-color: var(--c-tip-bg-dark);
+  border-left: 6px solid var(--c-tip-dark);
+  padding: 0.6em;
+}
+html[data-theme='dark'] .markdown blockquote p {
+  color: var(--c-tip-text-dark);
+}
+html[data-theme='light'] .markdown blockquote {
+  background-color: var(--c-tip-bg);
+  border-left: 6px solid var(--c-tip);
+  padding: 0.6em;
+}
+html[data-theme='light'] blockquote p {
+  color: var(--c-tip-text);
+}
+
+.markdown h2::before {
+  background: #338bff;
+  color: transparent;
+  content: '.';
+  display: inline-block;
+  margin-right: 0.4em;
+}
+/* .markdown h3::before {
+  background: #338bff;
+  color: transparent;
+  content: '.';
+  display: inline-block;
+  margin-right: 0.4em;
+} */
+.markdown > h1 {
+  font-size: 2.2em;
+}
+.markdown > table thead {
+  background-color: rgb(34, 51, 15);
+}
+code {
+  color: rgb(133, 255, 133);
+  padding: 0.2em 0.6em;
+}
+.markdown > ol li::marker {
+  color: #338bff;
+}
+.markdown > h2 {
+  border-bottom: 1px solid #338bff;
+  font-size: 1.8em;
+}
+
+.markdown > h3 {
+  font-size: 1.4em;
+}
