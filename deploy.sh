@@ -5,5 +5,5 @@ cd build
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@gitee.com:timspan/myx.git master:pages
+git push -f git@github.com:TimSpan/myx.git main:pages
 cd -
