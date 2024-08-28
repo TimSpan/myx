@@ -1,3 +1,6 @@
+---
+sidebar_position: 10
+---
 # Vuex4
 
 ## 1_组合式API

@@ -1,4 +1,7 @@
-# TypeScript
+---
+sidebar_position: 1
+---
+# 重新学习TypeScript
 
 ## 类型注解
 
@@ -73,9 +76,9 @@ alink.href
 <a href="www.baidu.com" id="link">百度一下</a>
 ```
 
-![image-20240705165531673](.\img\image-20240705165531673.png)
+![image-20240705165531673](./img/TS_img/image-20240705165531673.png)
 
-![image-20240705165211137](.\img\image-20240705165211137.png)
+![image-20240705165211137](./img/TS_img/image-20240705165211137.png)
 
 注意:getElementByld方法返回值的类型是HTMLElement，该类型只包含所有标签公共的属性或方法，不包含a标签特有的 href 等属性。
 
@@ -88,7 +91,7 @@ const alink = document.getElementById('link') as HTMLAnchorElement
 alink.href
 ```
 
-![image-20240705165627560](.\img\image-20240705165627560.png)
+![image-20240705165627560](./img/TS_img/image-20240705165627560.png)
 
 1. 使用 `as` 关键字实现类型断言
 2. 关键字 as 后面的类型是一个更加具体的类型(HTMLAnchorElement是HTMLElement 的子类型)
@@ -144,7 +147,7 @@ let person: { name: string, age: number, sayHi: () => void, greet(name: string):
 
 ## 类型兼容性
 
-![image-20240705171421640](.\img\image-20240705171421640.png)
+![image-20240705171421640](./img/TS_img/image-20240705171421640.png)
 
 两种类型系统:
 
@@ -221,7 +224,7 @@ type PersonDetail = {
 - 相同点：都可以实现对象类型的组合，
 - 不同点：两种方式实现类型组合时，对于`同名属性之间，处理类型冲突的方式不同`。
 
-![image-20240705173318150](.\img\image-20240705173318150.png)
+![image-20240705173318150](./img/TS_img/image-20240705173318150.png)
 
 ```ts
 interface A { fn: (value: number) => string }
@@ -455,7 +458,7 @@ let obj: iDFunc<number> = {
 
 实际上，JS 中的数组在 TS 中就是一个泛型接口,
 
-![image-20240704150107559](.\img\image-20240704150107559.png)
+![image-20240704150107559](./img/TS_img/image-20240704150107559.png)
 
 解释:
 
@@ -637,7 +640,7 @@ let props: ReadonlyProps = { id: '1', children: [] }
 props.id = '2'
 ```
 
-![image-20240708170343376](.\img\image-20240708170343376.png)
+![image-20240708170343376](./img/TS_img/image-20240708170343376.png)
 
 解释:构造出来的新类型 ReadonlyProps结构和 Props 相同，但所有属性都变为只读的。
 

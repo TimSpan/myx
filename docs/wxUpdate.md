@@ -1,3 +1,9 @@
+---
+sidebar_position: 11
+---
+
+
+
 # miniProgramUpdate
 小程序热更新
 ## 1、运行机制

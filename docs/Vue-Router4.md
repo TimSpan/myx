@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Vue-Router4
 
 **路由核心**，改变URL，但是页面不进行整体刷新
