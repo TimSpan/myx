@@ -585,6 +585,8 @@ type NonNullableT = NonNullable<T>; // string | number
 
 获取函数类型 `T` 的返回类型
 
+注意 这种方式 只能获取到一级 嵌套的则不行
+
 ```ts
 function getUser() {
     return {
