@@ -1,0 +1,20 @@
+.textContainer {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+  width: 100%;
+  /* height: 500px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  /* -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff); */
+}
+
+.textContainer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
